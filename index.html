@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Office Accicom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Accicom</div>
+        <div class="user">
+            <span id="username">Usuario</span>
+            <button id="logout" onclick="logout()">Cerrar sesión</button>
+        </div>        
+    </header>
+    
+    <nav class="sidebar">
+        <ul>
+            <li onclick="showModule('cargaBD')">Carga de BD</li>
+            <li onclick="showModule('ruc')">RUC</li>
+            <li onclick="showModule('parametros')">Parámetros</li>
+            <li onclick="showModule('aplicaciones')">Aplicaciones</li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <!-- Contenido dinámico se cargará aquí -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
